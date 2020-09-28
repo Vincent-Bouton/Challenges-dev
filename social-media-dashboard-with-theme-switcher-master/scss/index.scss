@@ -9,7 +9,7 @@
   }
 }
 
-@mixin text-color ($light-theme : true){
+@mixin text-color-primary ($light-theme : true){
   @if $light-theme{
     color : variable.$textPrimaryLT
   }@else{
@@ -17,25 +17,59 @@
   }
 }
 
+@mixin text-color-secondary ($light-theme : true){
+  @if $light-theme{
+    color : variable.$textSecondaryLT
+  }@else{
+    color: variable.$textSecondaryDT;
+  }
+}
+
+@mixin border-bottom ($light-theme : true){
+  @if $light-theme{
+    border-bottom :.1em solid variable.$textSecondaryLT
+  }@else{
+    border-bottom:.1em solid variable.$textSecondaryDT;
+  }
+}
+
 
 body{
   @include bg-color($light-theme : true);
-  @include text-color($light-theme: true);
+  @include text-color-primary($light-theme: true);
   font-size: variable.$fontSize;
   font-family: variable.$fontFamily;
   font-weight: variable.$fontRegular;
+  padding: .5rem;
   & h1,h2{
     font-weight: variable.$fontBold;
   }
 }
 .dark{
-  @include text-color($light-theme: false);
+  @include text-color-primary($light-theme: false);
   @include bg-color($light-theme : false)
 }
 
 
 .header{
-  h1{
-
+  div:first-child{
+    padding: 1rem 0;
+    @include border-bottom($light-theme : true);
+    body.dark &{
+      @include border-bottom($light-theme : false);
+    }
+    h1{
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    p{
+      @include text-color-secondary($light-theme: true);
+      margin: 0;
+      body.dark &{
+        @include text-color-secondary($light-theme: false);
+      }
+    }
   }
+
+
 }

@@ -5,6 +5,7 @@ body {
   font-size: 14px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  padding: 0.5rem;
 }
 body h1, body h2 {
   font-weight: 700;
@@ -13,6 +14,25 @@ body h1, body h2 {
 .dark {
   color: white;
   background: #1e202a;
+}
+
+.header div:first-child {
+  padding: 1rem 0;
+  border-bottom: 0.1em solid #63687e;
+}
+body.dark .header div:first-child {
+  border-bottom: 0.1em solid #8b97c6;
+}
+.header div:first-child h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.header div:first-child p {
+  color: #63687e;
+  margin: 0;
+}
+body.dark .header div:first-child p {
+  color: #8b97c6;
 }
 
 /*# sourceMappingURL=index.css.map */
