@@ -34,5 +34,36 @@ body.dark .header div:first-child {
 body.dark .header div:first-child p {
   color: #8b97c6;
 }
+.header div:last-child input[type=checkbox] {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  appearance: none;
+  background: #aeb3cb;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s;
+}
+.header div:last-child input:checked[type=checkbox] {
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+.header div:last-child input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: scale(0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: left 0.5s;
+}
+.header div:last-child input:checked[type=checkbox]:before {
+  left: 30px;
+  background: #1e202a;
+}
 
 /*# sourceMappingURL=index.css.map */

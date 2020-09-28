@@ -33,7 +33,6 @@
   }
 }
 
-
 body{
   @include bg-color($light-theme : true);
   @include text-color-primary($light-theme: true);
@@ -49,7 +48,6 @@ body{
   @include text-color-primary($light-theme: false);
   @include bg-color($light-theme : false)
 }
-
 
 .header{
   div:first-child{
@@ -71,5 +69,41 @@ body{
     }
   }
 
+  div:last-child{
 
+    input{
+
+      &[type="checkbox"]{
+        width: 60px;
+        height: 30px;
+        position :relative;
+        appearance: none;
+        background: variable.$toggleLT;
+        outline: none;
+        border-radius: 20px;
+        box-shadow:0 0 5px rgba(0,0,0,.2);
+        transition : background .5s
+      }
+      &:checked[type="checkbox"]{
+        background: variable.$toggleDT;
+      }
+      &[type="checkbox"]:before{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        background: variable.$backgroundLT;
+        transform: scale(0.8);
+        box-shadow: 0 2px 5px rgba(0,0,0,.2);
+        transition: left .5s;
+      }
+      &:checked[type="checkbox"]:before{
+        left:30px;
+        background: variable.$backgroundDT;
+      }
+    }
+  }
 }
