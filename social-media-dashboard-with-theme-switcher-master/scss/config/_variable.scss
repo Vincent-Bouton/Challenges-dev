@@ -1,0 +1,45 @@
+//Color
+
+// Primary color
+$limeGreen :hsl(163, 72%, 41%);
+$brightRed :hsl(356, 69%, 56%);
+$facebook :hsl(208, 92%, 53%);
+$twitter :hsl(203, 89%, 53%);
+$instagram :linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$youtube :hsl(348, 97%, 39%);
+
+//Primary Dark theme
+$toggleDT :linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+
+//Primary Light theme
+$toggleLT :hsl(230, 22%, 74%);
+
+
+//Neutral Color
+
+//Neutral Dark theme
+$backgroundDT :hsl(230, 17%, 14%);
+$topBackgroundDT :hsl(232, 19%, 15%);
+$cardBackgroundDT :hsl(228, 28%, 20%);
+$textPrimaryDT :hsl(0, 0%, 100%);
+$textSecondaryDT :hsl(228, 34%, 66%);
+
+//Neutral Light theme
+$backgroundLT :hsl(0, 0%, 100%);
+$topBackgroundLT :hsl(225, 100%, 98%);
+$cardBackgroundLT :hsl(227, 47%, 96%);
+$textPrimaryLT :hsl(230, 17%, 14%);
+$textSecondaryLT :hsl(228, 12%, 44%);
+
+//Typography
+
+$fontSize :14px;
+$fontFamily :'Inter', sans-serif;
+$fontRegular :400;
+$fontBold :700;
+
+// Layout
+
+$desktop :1440px;
+
+
