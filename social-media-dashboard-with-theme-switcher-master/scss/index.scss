@@ -1,40 +1,48 @@
 @use 'config/variable';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-@mixin bg-color ($light-theme : true){
-  @if $light-theme {
+@mixin bg-color ($LT : true){
+  @if $LT {
     background: variable.$backgroundLT;
   }@else{
     background: variable.$backgroundDT;
   }
 }
 
-@mixin bg-card ($light-theme : true){
-  @if $light-theme {
+@mixin bg-card ($LT : true) {
+  @if $LT {
     background: variable.$cardBackgroundLT;
-  }@else{
+    &:hover {
+      background: #e1e3e9;
+      cursor: pointer;
+    }
+  } @else {
     background: variable.$cardBackgroundDT;
+    &:hover {
+      background: #373b5f;
+      cursor: pointer;
+    }
   }
 }
 
-@mixin text-color-primary ($light-theme : true){
-  @if $light-theme{
+@mixin text-color-primary ($LT : true){
+  @if $LT{
     color : variable.$textPrimaryLT
   }@else{
     color: variable.$textPrimaryDT;
   }
 }
 
-@mixin text-color-secondary ($light-theme : true){
-  @if $light-theme{
+@mixin text-color-secondary ($LT : true){
+  @if $LT{
     color : variable.$textSecondaryLT
   }@else{
     color: variable.$textSecondaryDT;
   }
 }
 
-@mixin border-bottom ($light-theme : true){
-  @if $light-theme{
+@mixin border-bottom ($LT : true){
+  @if $LT{
     border-bottom :.1em solid variable.$textSecondaryLT
   }@else{
     border-bottom:.1em solid variable.$textSecondaryDT;
@@ -42,19 +50,24 @@
 }
 
 body{
-  @include bg-color($light-theme : true);
-  @include text-color-primary($light-theme: true);
+  @include bg-color($LT : true);
+  @include text-color-primary($LT: true);
   font-size: variable.$fontSize;
   font-family: variable.$fontFamily;
   font-weight: variable.$fontRegular;
   padding: .5rem;
+  transition: background .3s;
   & h1,h2{
     font-weight: variable.$fontBold;
   }
+  main{
+    max-width: 600px;
+    margin: auto;
+  }
 }
 .dark{
-  @include text-color-primary($light-theme: false);
-  @include bg-color($light-theme : false)
+  @include text-color-primary($LT: false);
+  @include bg-color($LT : false)
 }
 .positive{
   color: variable.$limeGreen
@@ -66,20 +79,20 @@ body{
 .header{
   div:first-child{
     padding: 1rem 0;
-    @include border-bottom($light-theme : true);
+    @include border-bottom($LT : true);
     body.dark &{
-      @include border-bottom($light-theme : false);
+      @include border-bottom($LT : false);
     }
     h1{
       font-size: 1.2rem;
       margin: 0;
     }
     p{
-      @include text-color-secondary($light-theme: true);
+      @include text-color-secondary($LT: true);
       margin: 0;
       font-weight: variable.$fontBold;
       body.dark &{
-        @include text-color-secondary($light-theme: false);
+        @include text-color-secondary($LT: false);
       }
     }
   }
@@ -89,11 +102,11 @@ body{
     justify-content: space-between;
     padding-top: 1rem;
     label{
-      @include text-color-secondary($light-theme : true);
+      @include text-color-secondary($LT : true);
       align-self: center;
       font-weight: variable.$fontBold;
       body.dark &{
-        @include text-color-secondary($light-theme : false);
+        @include text-color-secondary($LT : false);
       }
     }
     input{
@@ -134,11 +147,11 @@ body{
 
 .overall-list{
   padding: 0;
-
+  margin: 2rem 0;
   li{
-    @include bg-card($light-theme:true);
+    @include bg-card($LT:true);
     body.dark & {
-      @include bg-card($light-theme:false)
+      @include bg-card($LT:false)
     }
 
     position: relative;
@@ -153,9 +166,9 @@ body{
       font-size: .6rem;
       font-weight: variable.$fontBold;
 
-      @include text-color-secondary($light-theme:true);
+      @include text-color-secondary($LT:true);
       body.dark & {
-       @include text-color-secondary($light-theme:false)
+       @include text-color-secondary($LT:false)
       }
       img{
         margin: 0 5px;
@@ -182,9 +195,9 @@ body{
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: .6rem;
-      @include text-color-secondary($light-theme:true);
+      @include text-color-secondary($LT:true);
       body.dark & {
-        @include text-color-secondary($light-theme:false)
+        @include text-color-secondary($LT:false)
       }
     }
 
@@ -201,6 +214,76 @@ body{
       border-top-right-radius: 10px;
       left: 0;
       background: $i;
+    }
+  }
+}
+
+.overview-list{
+  h2{
+    @include text-color-secondary($LT: true);
+    body.dark &{
+      @include text-color-secondary($LT:false);
+    }
+  }
+  ul{
+    padding: 0;
+    li{
+      @include bg-card($LT: true);
+      body.dark & {
+        @include bg-card($LT: false)
+      }
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      list-style: none;
+      position:relative;
+
+      div:nth-child(1){
+        span:first-child{
+          @include text-color-secondary($LT:true);
+          body.dark & {
+            @include  text-color-secondary($LT:false)
+          }
+          font-weight: variable.$fontBold;
+          display: block;
+          margin-bottom:1rem;
+        }
+        span:last-child{
+          font-size: 1.5rem;
+          font-weight: variable.$fontBold;
+        }
+      }
+      div:nth-child(2){
+        img:first-child{
+          float: right;
+          margin-bottom: 40px;
+        }
+        img:last-child{
+          transform: translate(-4px,7px);
+          margin-left: 3px;
+          margin-bottom: 0;
+          float: left;
+        }
+        clear: both;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:variable.$desktop) {
+  body main{
+    max-width: 1280px;
+  }
+  .header{
+
+  }
+  .overall-list{
+    display: flex;
+    justify-content: space-between;
+    li{
+      flex-basis: 19%;
     }
   }
 }

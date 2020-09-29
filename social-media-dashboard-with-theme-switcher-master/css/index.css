@@ -6,9 +6,14 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding: 0.5rem;
+  transition: background 0.3s;
 }
 body h1, body h2 {
   font-weight: 700;
+}
+body main {
+  max-width: 600px;
+  margin: auto;
 }
 
 .dark {
@@ -90,6 +95,7 @@ body.dark .header div:last-child label {
 
 .overall-list {
   padding: 0;
+  margin: 2rem 0;
 }
 .overall-list li {
   background: #f0f2fa;
@@ -99,8 +105,16 @@ body.dark .header div:last-child label {
   border-radius: 5px;
   padding: 1.4rem;
 }
+.overall-list li:hover {
+  background: #e1e3e9;
+  cursor: pointer;
+}
 body.dark .overall-list li {
   background: #252a41;
+}
+body.dark .overall-list li:hover {
+  background: #373b5f;
+  cursor: pointer;
 }
 .overall-list li div:nth-of-type(1) {
   display: flex;
@@ -183,6 +197,77 @@ body.dark .overall-list li span:nth-of-type(2) {
   border-top-right-radius: 10px;
   left: 0;
   background: #c4032a;
+}
+
+.overview-list h2 {
+  color: #63687e;
+}
+body.dark .overview-list h2 {
+  color: #8b97c6;
+}
+.overview-list ul {
+  padding: 0;
+}
+.overview-list ul li {
+  background: #f0f2fa;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  list-style: none;
+  position: relative;
+}
+.overview-list ul li:hover {
+  background: #e1e3e9;
+  cursor: pointer;
+}
+body.dark .overview-list ul li {
+  background: #252a41;
+}
+body.dark .overview-list ul li:hover {
+  background: #373b5f;
+  cursor: pointer;
+}
+.overview-list ul li div:nth-child(1) span:first-child {
+  color: #63687e;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem;
+}
+body.dark .overview-list ul li div:nth-child(1) span:first-child {
+  color: #8b97c6;
+}
+.overview-list ul li div:nth-child(1) span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.overview-list ul li div:nth-child(2) {
+  clear: both;
+}
+.overview-list ul li div:nth-child(2) img:first-child {
+  float: right;
+  margin-bottom: 40px;
+}
+.overview-list ul li div:nth-child(2) img:last-child {
+  transform: translate(-4px, 7px);
+  margin-left: 3px;
+  margin-bottom: 0;
+  float: left;
+}
+
+@media screen and (min-width: 1440px) {
+  body main {
+    max-width: 1280px;
+  }
+
+  .overall-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .overall-list li {
+    flex-basis: 19%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
