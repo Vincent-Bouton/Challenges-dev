@@ -259,7 +259,7 @@ body.dark .overview-list ul li div:nth-child(1) span:first-child {
 @media screen and (min-width: 1440px) {
   body main {
     max-width: 1280px;
-    height: 95vh;
+    height: 94vh;
   }
 
   .header {
