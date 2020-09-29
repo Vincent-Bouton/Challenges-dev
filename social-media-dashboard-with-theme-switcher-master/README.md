@@ -2,6 +2,9 @@
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
+## [Site link](https://social-dashboard-risk0.netlify.app/)
+
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
