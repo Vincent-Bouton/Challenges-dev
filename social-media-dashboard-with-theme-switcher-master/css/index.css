@@ -233,7 +233,7 @@ body.dark .overview-list ul li:hover {
   color: #63687e;
   font-weight: 700;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
 }
 body.dark .overview-list ul li div:nth-child(1) span:first-child {
   color: #8b97c6;
@@ -261,12 +261,55 @@ body.dark .overview-list ul li div:nth-child(1) span:first-child {
     max-width: 1280px;
   }
 
-  .overall-list {
+  .header {
     display: flex;
     justify-content: space-between;
   }
+  .header div:nth-child(1) {
+    border: none !important;
+  }
+  .header div:nth-child(1) h1 {
+    font-size: 1.8rem;
+  }
+  .header div:nth-child(1) p {
+    font-size: 0.8rem;
+  }
+  .header div:nth-child(2) {
+    align-items: center;
+  }
+  .header div:nth-child(2) label {
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+  }
+
+  .overall-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
   .overall-list li {
     flex-basis: 19%;
+  }
+  .overall-list li div:nth-of-type(1) {
+    font-size: 0.7rem;
+  }
+  .overall-list li div:nth-of-type(2) {
+    margin-top: 1.5rem;
+    font-size: 0.6rem;
+  }
+  .overall-list li span:nth-of-type(1) {
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .overview-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .overview-list ul li {
+    flex-basis: 20%;
+    margin: 0.7rem 0;
   }
 }
 
