@@ -3,9 +3,9 @@
 
 @mixin bg-color ($LT : true){
   @if $LT {
-    background: variable.$backgroundLT;
+    background: linear-gradient(to bottom, variable.$topBackgroundLT 0%, variable.$topBackgroundLT 30%, variable.$backgroundLT 30%, variable.$backgroundLT 100%);
   }@else{
-    background: variable.$backgroundDT;
+    background: linear-gradient(to bottom, variable.$topBackgroundDT 0%, variable.$topBackgroundDT 30%, variable.$backgroundDT 30%, variable.$backgroundDT 100%);;
   }
 }
 
@@ -275,6 +275,7 @@ body{
 @media screen and (min-width:variable.$desktop) {
   body main{
     max-width: 1280px;
+    height: 95vh;
   }
   .header{
     display: flex;

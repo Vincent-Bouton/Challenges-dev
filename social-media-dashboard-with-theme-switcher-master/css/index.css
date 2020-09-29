@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 body {
-  background: white;
+  background: linear-gradient(to bottom, #f5f7ff 0%, #f5f7ff 30%, white 30%, white 100%);
   color: #1e202a;
   font-size: 14px;
   font-family: "Inter", sans-serif;
@@ -18,7 +18,7 @@ body main {
 
 .dark {
   color: white;
-  background: #1e202a;
+  background: linear-gradient(to bottom, #1f212e 0%, #1f212e 30%, #1e202a 30%, #1e202a 100%);
 }
 
 .positive {
@@ -259,6 +259,7 @@ body.dark .overview-list ul li div:nth-child(1) span:first-child {
 @media screen and (min-width: 1440px) {
   body main {
     max-width: 1280px;
+    height: 95vh;
   }
 
   .header {
