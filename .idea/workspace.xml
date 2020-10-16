@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9beba9d4-caf5-4f77-a291-b2a0909ad879" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Challenges-dev" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="1e3llpja" />
+  </component>
+  <component name="ProjectId" id="1i9ScVNxd8xprbDmGPfXrrpsCjQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NodeJs-Mini-Projects" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettier.files.pattern" value="{**/*,*}.{js,ts,jsx,tsx, html, scss, css}" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.config/yarn/global/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9beba9d4-caf5-4f77-a291-b2a0909ad879" name="Default Changelist" comment="" />
+      <created>1601318393406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601318393406</updated>
+      <workItem from="1601318394560" duration="9466000" />
+      <workItem from="1601330534806" duration="22803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="417" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601347967489">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="417" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601347967489" />
+    <state x="736" y="254" width="426" height="593" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601324270953">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="736" y="254" width="426" height="593" key="#com.intellij.ide.macro.MacrosDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601324270953" />
+    <state x="692" y="269" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601326945972">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="692" y="269" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601326945972" />
+    <state x="594" y="314" width="721" height="680" key="EditFileWatcherDialog" timestamp="1601324365882">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="594" y="314" width="721" height="680" key="EditFileWatcherDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601324365882" />
+    <state x="742" y="300" width="426" height="493" key="FileChooserDialogImpl" timestamp="1601497514229">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="742" y="300" width="426" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601497514229" />
+    <state x="448" y="175" width="1024" height="737" key="SettingsEditor" timestamp="1601324339371">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="448" y="175" width="1024" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601324339371" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601335720025">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601335720025" />
+    <state x="374" y="245" key="run.anything.popup" timestamp="1601350219418">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="374" y="245" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601350219418" />
+    <state x="623" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1601347237575">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="211" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601347237575" />
+  </component>
+</project>
