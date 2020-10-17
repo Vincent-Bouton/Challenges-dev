@@ -27,12 +27,7 @@ const Index = ({ data }) => {
       <button onClick={() => nextQuote()}>random</button>
       <p>{quote.quoteText}</p>
       <div>
-        <Link
-          href={{
-            pathname: "/[author]",
-            query: { slug: quote.quoteAuthor },
-          }}
-        >
+        <Link href={"/[author]"} as={`/${quote.quoteAuthor}`}>
           <a>
             <p>{quote.quoteAuthor}</p>
             <p>{quote.quoteGenre}</p>
