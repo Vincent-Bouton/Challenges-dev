@@ -1,10 +1,41 @@
 //DATE : 10/16/20
+import { useRouter } from 'next/router'
+import {useState} from "react";
 
-const Index = () => {
+const Index = ({data}) => {
+  const nextQuoteFunction = async ()=>{
+    const res = await fetch(`https://quote-garden.herokuapp.com/api/v2/quotes/random`)
+    const data = await res.json()
+
+
+    return {data}
+  }
+
+  const [quote, useQuote] = useState(data.quote)
+
+  const nextQuote = async () => {
+    const quote = await nextQuoteFunction()
+    console.log(quote.data)
+
+    useQuote(quote.data.quote)
+  }
+
+  const router = useRouter()
   return (
     <div className={"index"}>
-      test
+      <button onClick={()=> nextQuote()}>random</button>
+      <p>{quote.quoteText}</p>
+      <p>{quote.quoteAuthor}</p>
     </div>
   )
+}
+
+export async function getServerSideProps(){
+  const res = await fetch(`https://quote-garden.herokuapp.com/api/v2/quotes/random`)
+  const data = await res.json()
+
+  return{
+    props:{data}
+  }
 }
 export default Index;
