@@ -3,19 +3,25 @@
 import { useRouter } from "next/router";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
+import QuoteSkeleton from "../components/QuoteSkeleton";
 
 const Author = ({ data, author }) => {
   const { isFallback } = useRouter();
 
   if (isFallback) {
     console.log("true" + data);
-    return <RandomButton />;
+    return (
+      <div>
+        <RandomButton />
+        <QuoteSkeleton />
+      </div>
+    );
   } else {
     const { quotes } = data;
     return (
-      <div className={"container"}>
+      <div>
         <RandomButton />
-        <h1>{author}</h1>
+        <h1 style={{ paddingLeft: "100px", marginBottom: "50px" }}>{author}</h1>
         {quotes.map((quote) => (
           <Quote key={quote._id} quote={quote.quoteText} />
         ))}

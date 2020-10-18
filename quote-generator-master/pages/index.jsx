@@ -5,6 +5,7 @@ import { useState } from "react";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
 import nextQuote from "../lib/nextQuote";
+import Author from "../components/Author";
 
 const Index = ({ data }) => {
   const [quote, useQuote] = useState(data.quote);
@@ -13,14 +14,7 @@ const Index = ({ data }) => {
     <main className={"container"}>
       <RandomButton onClick={nextQuote} state={useQuote} />
       <Quote quote={quote.quoteText} />
-      <div>
-        <Link href={"/[author]"} as={`/${quote.quoteAuthor}`}>
-          <a>
-            <p>{quote.quoteAuthor}</p>
-            <p>{quote.quoteGenre}</p>
-          </a>
-        </Link>
-      </div>
+      <Author author={quote.quoteAuthor} genre={quote.quoteGenre} />
     </main>
   );
 };
