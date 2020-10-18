@@ -1,24 +1,41 @@
 //DATE : 10/17/20
 
 import { useRouter } from "next/router";
+import Quote from "../components/Quote";
+import RandomButton from "../components/RandomButton";
 
 const Author = (props) => {
-  console.log(props.data);
-  let quotes;
-  if (props.data.quotes.length === 0) {
-    quotes = <p>No quote there</p>;
+  const { isFallback } = useRouter();
+  // const { quoteText } = props.data.quotes;
+  if (isFallback) {
+    console.log("true" + props.data);
+    return <RandomButton />;
   } else {
-    quotes = (
-      <p>
-        {props.data.quotes.map((quote) => (
-          <p>{quote.quoteText}</p>
-        ))}
-      </p>
-    );
+    console.log("false" + props.data);
+    return <RandomButton />;
   }
-  return <div className={"author"}>{quotes}</div>;
+  console.log(props.data);
+  // if (props.data.quotes.length === 0) {
+  //   return <p>No quote there</p>;
+  // }
+
+  // return (
+  //   <div className={"container"}>
+  //     <RandomButton />
+  //     <h1></h1>
+  //     {/*{props.data.quotes.map((quote) => (*/}
+  //     {/*  <Quote quote={quote.quoteText} />*/}
+  //     {/*))}*/}
+  //   </div>
+  // );
 };
-export async function getServerSideProps({ params, req, res }) {
+export async function getStaticPaths() {
+  return { paths: [], fallback: true };
+}
+
+export async function getStaticProps({ params, req, res }) {
+  const { author } = params;
+
   const response = await fetch(
     `https://quote-garden.herokuapp.com/api/v2/authors/${params.author}?page=1&limit=4`
   );
@@ -30,25 +47,12 @@ export async function getServerSideProps({ params, req, res }) {
     return { props: {} };
   }
   const data = await response.json();
-  return {
-    props: { data },
-  };
-  // if (data) {
-  //   return {
-  //     props: { author: data },
-  //   };
-  // }
+
+  if (data) {
+    return {
+      props: { data },
+    };
+  }
 }
 
-//
-//
-//   const { data } = await response.json();
-//
-//   if (data) {
-//     return {
-//       props: { author: data },
-//     };
-//   }
-// }
-//
 export default Author;
