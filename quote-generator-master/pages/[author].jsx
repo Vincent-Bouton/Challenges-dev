@@ -4,30 +4,24 @@ import { useRouter } from "next/router";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
 
-const Author = (props) => {
+const Author = ({ data, author }) => {
   const { isFallback } = useRouter();
-  // const { quoteText } = props.data.quotes;
+
   if (isFallback) {
-    console.log("true" + props.data);
+    console.log("true" + data);
     return <RandomButton />;
   } else {
-    console.log("false" + props.data);
-    return <RandomButton />;
+    const { quotes } = data;
+    return (
+      <div className={"container"}>
+        <RandomButton />
+        <h1>{author}</h1>
+        {quotes.map((quote) => (
+          <Quote key={quote._id} quote={quote.quoteText} />
+        ))}
+      </div>
+    );
   }
-  console.log(props.data);
-  // if (props.data.quotes.length === 0) {
-  //   return <p>No quote there</p>;
-  // }
-
-  // return (
-  //   <div className={"container"}>
-  //     <RandomButton />
-  //     <h1></h1>
-  //     {/*{props.data.quotes.map((quote) => (*/}
-  //     {/*  <Quote quote={quote.quoteText} />*/}
-  //     {/*))}*/}
-  //   </div>
-  // );
 };
 export async function getStaticPaths() {
   return { paths: [], fallback: true };
@@ -50,7 +44,7 @@ export async function getStaticProps({ params, req, res }) {
 
   if (data) {
     return {
-      props: { data },
+      props: { data: data, author: author },
     };
   }
 }
