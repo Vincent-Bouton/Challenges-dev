@@ -2,14 +2,15 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import styles from "./Author.module.scss";
 
 const Author = ({ genre, author }) => {
   return (
-    <div className={"Author"}>
+    <div className={styles.box}>
       <Link href={"/[author]"} as={`/${author}`}>
         <a>
-          <p>{author}</p>
-          <p>{genre}</p>
+          <p className={styles.author}>{author}</p>
+          <p className={styles.genre}>{genre}</p>
         </a>
       </Link>
     </div>

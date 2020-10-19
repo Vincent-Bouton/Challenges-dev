@@ -1,0 +1,30 @@
+.box{
+  background: #333333;
+  max-width: 760px;
+  margin: auto;
+  transition: box-shadow .6s ease-out,transform .3s ease-out;
+  a{
+    text-decoration: none;
+  }
+  .author{
+    padding-top: 50px ;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+    color:#F2F2F2;
+  }
+  .genre{
+    font-weight: 500;
+    color:#828282;
+    font-size: .8rem;
+    padding-bottom: 50px;
+    margin:0 0 0 20px;
+    box-shadow: none;
+    transform: none;
+    transition-property:box-shadow, tranform;
+  }
+  &:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.75);;
+    transition-duration :.3s;
+  }
+}
