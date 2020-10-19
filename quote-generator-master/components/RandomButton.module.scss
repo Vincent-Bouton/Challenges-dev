@@ -8,8 +8,9 @@
   align-items: center;
   border-radius: 10px;
   padding: 4px;
-  margin:30px 0 60px;
+  margin:30px 0 48px;
   text-decoration: none;
+
   &:hover{
     background: #F7DF94;
     .icon{
@@ -18,7 +19,7 @@
     }
   }
   .button{
-    font-size: 1.2rem;
+    font-size: .8rem;
     background: none;
     outline: inherit;
     border: none;

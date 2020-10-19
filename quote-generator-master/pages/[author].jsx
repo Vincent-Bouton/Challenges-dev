@@ -21,7 +21,9 @@ const Author = ({ data, author }) => {
     return (
       <div>
         <RandomButton />
-        <h1 style={{ paddingLeft: "100px", marginBottom: "50px" }}>{author}</h1>
+        <h1 style={{ paddingLeft: "100px", marginBottom: "140px" }}>
+          {author}
+        </h1>
         {quotes.map((quote) => (
           <Quote key={quote._id} quote={quote.quoteText} />
         ))}

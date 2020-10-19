@@ -9,9 +9,9 @@ const QuoteSkeleton = () => {
         <Skeleton height={"1.7rem"} width={"30%"} />
       </div>
       <div className={styles.quote}>
-        <Skeleton height={"1.1rem"} width={"100%"} margin={"21px 0 21px"} />
-        <Skeleton height={"1.1rem"} width={"100%"} margin={"0 0 21px"} />
-        <Skeleton height={"1.1rem"} width={"30%"} margin={"0 0 21px"} />
+        <Skeleton height={"1.3rem"} width={"100%"} margin={"21px 0 21px"} />
+        <Skeleton height={"1.3rem"} width={"100%"} margin={"0 0 21px"} />
+        <Skeleton height={"1.3rem"} width={"30%"} margin={"0 0 21px"} />
       </div>
     </div>
   );
