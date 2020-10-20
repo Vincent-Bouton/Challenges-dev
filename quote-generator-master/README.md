@@ -33,10 +33,6 @@ It's really fun to starting with a new technologie, I learn a lot, how to SSG, S
 <a href="https://sass-lang.com/">
     <img width="30"  src="./assets/sass.svg" alt="Sass logo"/>
     <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge" alt="Sass"/>
-</a>
-<a href="https://nextjs.org/">
-    <img width="30"  src="./assets/vercel.svg" alt="Vercel logo"/>
-    <img src="https://img.shields.io/badge/Deploy%20On%20Vercel-010101?style=for-the-badge" alt="Vercel"/>
 </a>    
 
 
