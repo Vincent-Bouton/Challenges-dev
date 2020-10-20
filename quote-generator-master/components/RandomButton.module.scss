@@ -1,6 +1,7 @@
 .content{
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .random {
@@ -23,6 +24,7 @@
     background: none;
     outline: inherit;
     border: none;
+    cursor: pointer;
   }
   .icon{
     transition: transform .3s;

@@ -1,6 +1,7 @@
 //DATE : 10/16/20
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 import { useState } from "react";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
@@ -11,11 +12,16 @@ const Index = ({ data }) => {
   const [quote, useQuote] = useState(data.quote);
   const router = useRouter();
   return (
-    <main className={"container"}>
-      <RandomButton onClick={nextQuote} state={useQuote} />
-      <Quote quote={quote.quoteText} />
-      <Author author={quote.quoteAuthor} genre={quote.quoteGenre} />
-    </main>
+    <div>
+      <Head>
+        <title>Quote generator || Random </title>
+      </Head>
+      <main className={"container"}>
+        <RandomButton onClick={nextQuote} state={useQuote} />
+        <Quote quote={quote.quoteText} />
+        <Author author={quote.quoteAuthor} genre={quote.quoteGenre} />
+      </main>
+    </div>
   );
 };
 

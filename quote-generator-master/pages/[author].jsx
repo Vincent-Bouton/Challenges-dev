@@ -4,14 +4,17 @@ import { useRouter } from "next/router";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
 import QuoteSkeleton from "../components/QuoteSkeleton";
+import Head from "next/head";
 
 const Author = ({ data, author }) => {
   const { isFallback } = useRouter();
 
   if (isFallback) {
-    console.log("true" + data);
     return (
       <div>
+        <Head>
+          <title>Quote generator || Author</title>
+        </Head>
         <RandomButton />
         <QuoteSkeleton />
       </div>
@@ -20,6 +23,9 @@ const Author = ({ data, author }) => {
     const { quotes } = data;
     return (
       <div>
+        <Head>
+          <title>Quote generator || {author}</title>
+        </Head>
         <RandomButton />
         <h1 style={{ paddingLeft: "100px", marginBottom: "140px" }}>
           {author}
