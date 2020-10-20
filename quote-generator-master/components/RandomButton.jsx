@@ -21,7 +21,6 @@ const RandomButton = (props) => {
             />
           </a>
         </Link>
-        <div onClick={() => nextQuote(props.state)}></div>
       </div>
     );
   }

@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import Quote from "../components/Quote";
 import RandomButton from "../components/RandomButton";
 import QuoteSkeleton from "../components/QuoteSkeleton";
+import Button from "../components/Button";
 import Head from "next/head";
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 import { useState } from "react";
 
 const Author = ({ data, author }) => {
@@ -31,8 +31,8 @@ const Author = ({ data, author }) => {
       return array;
     };
 
-    const loadMore = () => {
-      useAllQuotes(true);
+    const loadMore = (state) => {
+      state(true);
     };
 
     const toggleAllQuotes = () => {
@@ -61,7 +61,11 @@ const Author = ({ data, author }) => {
           {author}
         </h1>
         {toggleAllQuotes()}
-        {!allQuotes ? <button onClick={loadMore}>Load More</button> : null}
+        {!allQuotes ? (
+          <Button onClick={loadMore} state={useAllQuotes}>
+            Load More
+          </Button>
+        ) : null}
       </div>
     );
   }

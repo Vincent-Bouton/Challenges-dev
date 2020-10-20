@@ -1,0 +1,21 @@
+.div{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  padding: .8rem 1.6rem;
+  border-radius: 10px;
+  font-size: .8rem;
+  color:#F2F2F2;
+  margin-bottom: 2rem;
+  background: #333333;
+  outline: inherit;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow .3s ease-out,transform .3s ease-out;
+  &:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.75);;
+    transition-duration :.3s;
+  }
+}
