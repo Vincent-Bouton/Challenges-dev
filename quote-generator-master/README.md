@@ -15,7 +15,14 @@
 
 ![screenshot](./assets/site.png)
 
-I'm new with next.js so I starting a litle challenge to starting with. This challenges is pretty fun with an API. The site is deploy with Vercel on this [link](https://quote-generator-master.vincent-risk0.vercel.app/).
+I'm new with next.js so I starting a litle challenge to starting with. This challenges is pretty fun with an API.
+The site is deploy with Vercel on this link bellow.
+
+<a href="https://quote-generator-master-one.vercel.app/">
+    <img width="30"  src="./assets/vercel.svg" alt="Vercel logo"/>
+    <img src="https://img.shields.io/badge/Deploy%20On%20Vercel-010101?style=for-the-badge" alt="Vercel"/>
+</a> 
+
 It's really fun to starting with a new technologie, I learn a lot, how to SSG, SSR and more.
 
 ### Built with
