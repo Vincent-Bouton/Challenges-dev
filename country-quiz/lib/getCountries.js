@@ -4,7 +4,6 @@ const getCountries = (data) => {
   for (let i = 0; i < 4; i++) {
     const number = Math.floor(Math.random() * data.length + 1);
     const country = data[number];
-    console.log(country);
 
     if (country && arrayNumbers[i - 1] !== number) {
       arrayCountry.push(country);
