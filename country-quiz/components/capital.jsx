@@ -11,55 +11,26 @@ const capital = ({ data }) => {
     const newCountries = getCountries(data);
     useFourCountry(newCountries);
     useAnswer(getAnswer(newCountries));
-    useAnswerCss({ good: "", wrong: "", disabled: false });
   };
   const [fourCountry, useFourCountry] = useState(getCountries(data));
   const [answer, useAnswer] = useState(() => getAnswer(fourCountry));
-  const [answerCss, useAnswerCss] = useState({
-    good: "",
-    wrong: "",
-    disabled: false,
-  });
 
   const question = fourCountry.map((country) => {
     const uuid = uuidv4();
     if (country.name === answer.name) {
       return (
-        <button
-          onClick={(e) => game(country, e)}
-          key={uuid}
-          id={"good"}
-          className={` ${answerCss.good ? styles.button : ""}`}
-          disabled={answerCss.disabled}
-        >
+        <button onClick={(e) => game(country, e)} key={uuid} id={"good"}>
           {country.name}
         </button>
       );
     }
 
     return (
-      <button
-        onClick={(e) => game(country, e)}
-        key={uuid}
-        className={styles.button}
-        disabled={answerCss.disabled}
-      >
+      <button onClick={(e) => game(country, e)} key={uuid}>
         {country.name}
       </button>
     );
   });
-  const game = (country, event) => {
-    console.log(country);
-    let wrong;
-    if (country.name !== answer.name) {
-      let wrong = styles.wrong;
-      event.target.classList;
-      console.log(event.target.classList);
-    }
-    wrong
-      ? useAnswerCss({ good: styles.good, wrong: wrong, disabled: true })
-      : useAnswerCss({ good: styles.good, wrong: "", disabled: true });
-  };
 
   return (
     <div className={"capital"}>
