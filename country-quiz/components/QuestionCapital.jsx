@@ -1,34 +1,25 @@
 //DATE : 10/28/20
 
 import React, { useState } from "react";
-import styles from "../pages/capital.module.scss";
 import capitalGame from "../lib/Games/capitalGame";
+import Button from "./Button";
 
-const QuestionCapital = ({ fourCountries, answer, game, state }) => {
+const QuestionCapital = ({ fourCountries, answer, state }) => {
   return fourCountries.map((country) => {
-    if (country.country.countryName === answer.country.countryName) {
-      return (
-        <button
-          onClick={(e) => capitalGame(country, fourCountries, answer, state)}
-          key={country.id}
-          className={`${styles.button} ${
-            country.isActive ? styles.good : null
-          }`}
-          disabled={country.disabled}
+    return (
+      <div
+        key={country.id}
+        onClick={() => capitalGame(country, fourCountries, answer, state)}
+      >
+        <Button
+          question={true}
+          isActive={country.isActive}
+          isDisabled={country.disabled}
+          style={country.country.countryName === answer.country.countryName}
         >
           {country.country.countryName}
-        </button>
-      );
-    }
-    return (
-      <button
-        className={`${styles.button} ${country.isActive ? styles.wrong : null}`}
-        onClick={(e) => capitalGame(country, fourCountries, answer, state)}
-        key={country.id}
-        disabled={country.disabled}
-      >
-        {country.country.countryName}
-      </button>
+        </Button>
+      </div>
     );
   });
 };

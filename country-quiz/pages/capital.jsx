@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import getCountries from "../lib/getCountries";
 import getAnswer from "../lib/getAnswer";
-import styles from "./capital.module.scss";
+import Button from "../components/Button";
 import QuestionCapital from "../components/QuestionCapital";
 
 const capital = ({ data }) => {
@@ -25,9 +25,9 @@ const capital = ({ data }) => {
         answer={answer}
         state={useGetFourCountries}
       />
-      <button onClick={() => getNewCountries()} className={styles.button}>
-        New game
-      </button>
+      <div onClick={() => getNewCountries()}>
+        <Button nextQuestion={true}>New game</Button>
+      </div>
     </div>
   );
 };
