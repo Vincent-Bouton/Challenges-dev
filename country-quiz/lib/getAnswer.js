@@ -1,6 +1,12 @@
 const getAnswer = (fourCountry) => {
-  const number = Math.floor(Math.random() * fourCountry.length);
-  return fourCountry[number];
+  for (let i = 0; i <= 1; i++) {
+    const number = Math.floor(Math.random() * fourCountry.length);
+    if (fourCountry[number].country.countryCapital === "") {
+      i--;
+    } else {
+      return fourCountry[number];
+    }
+  }
 };
 
 export default getAnswer;
