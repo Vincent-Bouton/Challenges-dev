@@ -14,7 +14,7 @@ const Button = (props) => {
   if (props.link) {
     return (
       <Link href={props.href}>
-        <a>{props.children}</a>
+        <a className={styles.button}>{props.children}</a>
       </Link>
     );
   }
