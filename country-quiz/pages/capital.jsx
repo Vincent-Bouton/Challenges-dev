@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./capital.module.scss";
+import Image from "next/image";
 
 import getCountries from "../lib/getCountries";
 import getAnswer from "../lib/getAnswer";
@@ -21,6 +22,15 @@ const capital = ({ data }) => {
   return (
     <div className={styles.capital}>
       <h1>capital game</h1>
+      <div className={styles.image}>
+        <Image
+          src={"/undraw_adventure.svg"}
+          alt={"Human with a globe"}
+          width={162}
+          height={116}
+        />
+      </div>
+
       <p className={styles.question}>
         {answer.country.countryCapital} is the capital of :
       </p>
