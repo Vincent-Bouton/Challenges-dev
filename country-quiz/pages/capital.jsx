@@ -1,6 +1,8 @@
 //DATE : 10/28/20
 
-import React, { useState } from "react";
+import { useState } from "react";
+import styles from "./capital.module.scss";
+
 import getCountries from "../lib/getCountries";
 import getAnswer from "../lib/getAnswer";
 import Button from "../components/Button";
@@ -17,14 +19,18 @@ const capital = ({ data }) => {
   const [answer, useAnswer] = useState(() => getAnswer(getFourCountries));
 
   return (
-    <div className={"capital"}>
-      capital game
-      <p>{answer.country.countryCapital} is the capital of :</p>
-      <QuestionCapital
-        fourCountries={getFourCountries}
-        answer={answer}
-        state={useGetFourCountries}
-      />
+    <div className={styles.capital}>
+      <h1>capital game</h1>
+      <p className={styles.question}>
+        {answer.country.countryCapital} is the capital of :
+      </p>
+      <div>
+        <QuestionCapital
+          fourCountries={getFourCountries}
+          answer={answer}
+          state={useGetFourCountries}
+        />
+      </div>
       <div onClick={() => getNewCountries()}>
         <Button nextQuestion={true}>New game</Button>
       </div>

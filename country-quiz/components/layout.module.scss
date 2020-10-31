@@ -1,7 +1,15 @@
 .container{
   display: flex;
   justify-content: center;
+  position: relative;
+  height: 90vh;
 }
 .card{
-  width: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  width: 50vh;
+  height:60vh;
+  max-height: 60vh;
 }
