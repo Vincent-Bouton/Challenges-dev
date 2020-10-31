@@ -6,12 +6,12 @@ import Button from "../components/Button";
 const index = () => {
   return (
     <div>
-      <Button link={true} href={"/capital"}>
-        Capital game
-      </Button>
-      <Button link={true} href={"/flag"}>
-        Flag Game
-      </Button>
+      <Link link={true} href={"/capital"}>
+        <a>Capital game</a>
+      </Link>
+      <Link link={true} href={"/flag"}>
+        <a> flag Game</a>
+      </Link>
     </div>
   );
 };

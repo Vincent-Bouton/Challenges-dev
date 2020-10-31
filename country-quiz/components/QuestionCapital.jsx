@@ -5,11 +5,17 @@ import capitalGame from "../lib/Games/capitalGame";
 import Button from "./Button";
 
 const QuestionCapital = ({ fourCountries, answer, state }) => {
-  return fourCountries.map((country) => {
+  const abcd = ["A", "B", "C", "D"];
+  return fourCountries.map((country, index) => {
     return (
       <div
         key={country.id}
-        onClick={() => capitalGame(country, fourCountries, answer, state)}
+        onClick={() =>
+          country.disabled
+            ? ""
+            : capitalGame(country, fourCountries, answer, state)
+        }
+        style={{ margin: ".25rem" }}
       >
         <Button
           question={true}
@@ -17,7 +23,8 @@ const QuestionCapital = ({ fourCountries, answer, state }) => {
           isDisabled={country.disabled}
           style={country.country.countryName === answer.country.countryName}
         >
-          {country.country.countryName}
+          <div>{abcd[index]}</div>
+          <div>{country.country.countryName}</div>
         </Button>
       </div>
     );
