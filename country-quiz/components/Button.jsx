@@ -21,7 +21,9 @@ const Button = (props) => {
   if (props.question) {
     return (
       <button
-        className={`${styles.button} ${props.isActive ? isGood : ""}`}
+        className={`${styles.button} ${props.isActive ? isGood : ""} ${
+          props.isDisabled ? styles.neutral : ""
+        }`}
         disabled={props.isDisabled}
       >
         {props.children}

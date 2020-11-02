@@ -1,22 +1,40 @@
-.wrong{
-  background: #EA8282;
-}
+
 .button{
-  border: 0;
-  border-radius: 0.25rem;
+  background: none;
+  display: flex;
+  border: 2px solid rgba(96,102,208,0.7);
+  border-radius: 12px;
   color: black;
   font-family: system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   white-space: nowrap;
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
   cursor: pointer;
-  width: 90%;
-
-
+  min-width: 90%;
+  padding: 15px 15px 15px 0;
+  outline: none;
+  &:hover{
+    background: #F9A826;
+  }
+}
+.neutral{
+  background: none;
+  &:hover{
+    cursor: inherit;
+    background: none;
+  }
+}
+.wrong{
+  background: #EA8282;
+  &:hover{
+    background: #EA8282;
+  }
 }
 .good{
   background: #60BF88;
+  &:hover{
+    background: #60BF88;
+  }
 ;
 }

@@ -24,7 +24,7 @@ const QuestionCapital = ({ fourCountries, answer, state }) => {
           isDisabled={country.disabled}
           style={country.country.countryName === answer.country.countryName}
         >
-          <div>{abcd[index]}</div>
+          <div className={styles.abcd}>{abcd[index]}</div>
           <div>{country.country.countryName}</div>
         </Button>
       </div>
