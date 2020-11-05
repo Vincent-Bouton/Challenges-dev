@@ -31,7 +31,7 @@ const Button = (props) => {
     );
   }
   if (props.nextQuestion) {
-    return <button className={styles.button}>{props.children}</button>;
+    return <button className={styles.buttonNext}>{props.children}</button>;
   }
 };
 export default Button;

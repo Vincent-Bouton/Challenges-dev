@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9beba9d4-caf5-4f77-a291-b2a0909ad879" name="Default Changelist" comment="" />
+    <list default="true" id="9beba9d4-caf5-4f77-a291-b2a0909ad879" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country-quiz/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/country-quiz/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country-quiz/components/button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/country-quiz/components/button.module.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Challenges-dev" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -59,13 +63,14 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NodeJs-Mini-Projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/country-quiz" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.files.pattern" value="{**/*,*}.{js,ts,jsx,tsx, html, scss, css}" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.config/yarn/global/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/country-quiz/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,6 +83,7 @@
       <updated>1601318393406</updated>
       <workItem from="1601318394560" duration="9466000" />
       <workItem from="1601330534806" duration="22803000" />
+      <workItem from="1604610116027" duration="748000" />
     </task>
     <servers />
   </component>
@@ -113,9 +119,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="594" y="314" width="721" height="680" key="EditFileWatcherDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601324365882" />
-    <state x="742" y="300" width="426" height="493" key="FileChooserDialogImpl" timestamp="1601497514229">
+    <state x="742" y="300" width="426" height="493" key="FileChooserDialogImpl" timestamp="1604610862779">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="742" y="300" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1604610862779" />
     <state x="742" y="300" width="426" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1601497514229" />
     <state x="448" y="175" width="1024" height="737" key="SettingsEditor" timestamp="1601324339371">
       <screen x="0" y="27" width="1920" height="1053" />
