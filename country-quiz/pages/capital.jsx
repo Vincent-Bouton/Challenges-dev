@@ -41,8 +41,8 @@ const capital = ({ data }) => {
           state={useGetFourCountries}
         />
       </div>
-      <div onClick={() => getNewCountries()}>
-        <Button nextQuestion={true}>New game</Button>
+      <div className={styles.button}>
+        <button onClick={() => getNewCountries()} >New game</button>
       </div>
     </div>
   );
