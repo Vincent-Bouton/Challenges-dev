@@ -27,7 +27,6 @@
   display: flex;
   justify-content: flex-end;
   button{
-    background: #F9A826;
     border: 2px solid rgba(96,102,208,0.7);
     border-radius: 12px;
     color: black;
@@ -40,6 +39,10 @@
     padding: 15px 15px 15px 15px;
     outline: none;
     margin-right: 15px;
+    &:hover{
+      background: #F9A826;
+
+    }
   }
 
 }

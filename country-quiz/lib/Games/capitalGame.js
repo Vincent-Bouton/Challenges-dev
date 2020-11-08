@@ -5,6 +5,7 @@ const capitalGame = (country, FourCountries, answer, state) => {
     disabled: true,
   }));
   state(fourCountriesActive);
+
 };
 
 export default capitalGame;
